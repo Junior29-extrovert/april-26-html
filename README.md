@@ -10,5 +10,6 @@
     <p classname="special">
     <
     <u1>
-    <li>Beef stew</li> 
+    <li>Beef stew
+        <with a side of coleslaw> 
     >   >>
