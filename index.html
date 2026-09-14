@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Junior's Kitchen Menu</title>
+    <link rel="stylesheet" href="style.css">
 
     <style>
-        body {
+body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -18,7 +18,7 @@
             background-color: #ff6347;
             color: white;
             padding: 20px;
-            text-align: center;
+            text-align: left;
         }
 
         h1 {
@@ -32,7 +32,6 @@
 
         nav a {
             float: left;
-            display: block;
             color: white;
             text-align: center;
             padding: 14px 16px;
@@ -50,26 +49,26 @@
 
         .menu-section h2 {
             color: #ff6347;
+            text-align: center;
         }
 
-        .menu-item {
-            margin-bottom: 15px;
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
         }
 
         .menu-item h3 {
             margin: 0;
+            color: #ff6347;
+            text-transform: uppercase;
         }
 
         .menu-item p {
-            margin: 5px 0 0 0;
+            margin: 5px 0;
+            text-align: center;
         }
 
-    
-    .menu-item {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-    }
     .item {
         background-color: white;
         padding: 20px;
@@ -79,23 +78,27 @@
     .item h3 {
         margin-top: 0;
         color: #ff6347;
+        text-align: center;
     }
     .item p {
         line-height: 1.5;
         color:#333;
+        text-align: center;
     }
 .price {
         font-weight: bold;
         color: #ff6347;
+        text-align: center;
     }
     /*footer styling*/
     footer {
         background-color: #333;
         color: white;
-        text-align: center;
+        text-align: left;
         padding: 20px;
         margin-top: 40px;
     }
+        
     </style>
     </head>
 
@@ -103,7 +106,7 @@
     <header>
         <h1>Junior's Kitchen</h1>
         <p>Fresh Food. Good Eats</p>
-Vibes.<p/>
+        <p/>
     </header>
 
     <nav>
@@ -113,131 +116,186 @@ Vibes.<p/>
         <a href="#beverages">Beverages</a>
     </nav>
 
-    <div class="menu-section" id="appetizers">
+<section class="menu-section" id="appetizers">
         <h2>Appetizers</h2>
+
         <div class="menu-item">
+
             <div class="item">
                 <h3>Bruschetta</h3>
                 <p>Grilled bread topped with fresh tomatoes, garlic, and basil.</p>
                 <p class="price">R85.00</p>
             </div>
+
             <div class="item">
                 <h3>Stuffed Mushrooms</h3>
                 <p>Mushrooms filled with a savory mixture of cheese and herbs.</p>
                 <p class="price">R135.00</p>
+            </div>
+            
+
             <div class=""item">
                 <h3>Laoded Fries</h3>
                 <p>Fried Chips topped with cheese and our special sauce</p>
                 <p class="price">R35</p>
             </div>
+
             <div class=""item">
                 <h3>Chicken Wings</h3>
                 <p>Juicy chicken wings served spicy or BBQ</p>
                 <p class="price">R68</p>
-    <div class="menu-section" id="main-courses">
+            </div>
+
+<div class="menu-section" id="main-courses">
         <h2>Main Courses</h2>
+
         <div class="menu-item">
+
             <div class="item">
                 <h3>Grilled Salmon</h3>
                 <p>Fresh salmon fillet grilled to perfection, served with vegetables.</p>
                 <p class="price">R360.00</p>
             </div>
+
             <div class="item">
                 <h3>Chicken Alfredo</h3>
                 <p>Creamy Alfredo sauce over fettuccine pasta with grilled chicken.</p>
                 <p class="price">R125.00</p>
             </div>
+
         </div class="item">
             <h3>Crispy Chicken Burger</h3>
             <p>Crispy chicken with slaw,pickles and spicy mayo</p>
             <p class="price">R165</p>
         </div> 
+
             <h3>Beef Lasagna</h3>
             <p>Layers of pasta, beef, and cheese baked to perfection.</p>
             <p class="price">R145</p>
+        </div>
+
         <div class="item">
             <h3>Spicy prawn Penne</h3>
             <p>Prawns, garlic, chilli tomato, herbs and Parmesan</p>
             <p class="price">R190</p>
+        </div>
+
         <div class="item">
             <h3>Peri Peri Half Chicken</h3>
             <p>Grilled chicken, house peri peri sauce with large or small fries</p>
             <p class="price">R235</p>
+        </div>
+
         <div class="item">
             <h3>Lamb Chops</h3>
             <p>Grilled lamb chops marinated in olive oil, fresh garlic, a medley of fresh herbs</p>
             <p class="price">R319</p>
+        </div>
 
-    <div class="menu-section" id="beverages">
+<div class="menu-section" id="beverages">
         <h2>Beverages</h2>
+
         <div class="menu-item">
+
             <div class="item">
                 <h3>Fresh Lemonade</h3>
                 <p>Freshly squeezed lemons with a hint of mint.</p>
-                <span class>"price">R25</span>>
+                <p class>"price">R25</p>
+            </div>
+
             <div class="item">
                 <h3>Coca Cola</h3>
                 <p>Classic Coca Cola served chilled.</p>
-                <span class="price">R20</span>
+                <p class="price">R20</p>
+             </div>   
+
             <div class="item">
                 <h3>Orange juice</h3>
                 <p>Freshly squeezed orange juice.</p>
-                <span class="price">R15</span>
+                <p class="price">R15</p>
+            </div>    
+
             <div class="item">
                 <h3>Water</h3>
                 <p>Still or sparkling water.</p>
-                <span class="price">R10</span>
-    <div class="menu-selection" id="Alcoholic beverags">
+                <p class="price">R10</p>
+            </div>
+
+<div class="menu-selection" id="Alcoholic beverags">
         <h2>Alcoholic Beverages</h2>
+
         <div class="menu-item">
+
             <div class="item">
                 <h3>Beer</h3>
                 <p>Corna extra</p>
-                <span class="price">R45</span>
+                <p class="price">R45</p>
+            </div>
+
             <div class="item">
                 <h3>Beer</h3>
                 <p>Castle Lager</p>
-                <span class="price">R35</span>
+                <p class="price">R35</p>
+            </div>
+
             <div class="item">
                 <h3>Beer</h3>
                 <p>Castle Lite</p>
-                <span class="price">R35</span>
+                <p class="price">R35</p>
+            </div>
+
             <div class="item">
                 <h3>Beer</h3>
                 <p>Stella</p>
-                <span class="price">R35</span>
+                <p class="price">R35</p>
+            </div>
+
             <div class="item">
                 <h3>Wine</h3>
                 <p>Glass of Robertson Red Wine</p>
-                <span class="price">R45</span>
+                <p class="price">R45</p>
+            </div>
+
             <div class="item">
                 <h3>Wine</h3>
                 <p>Glass of Robertson White Wine</p>  
                 <p class="price">R45</p>
-    <div class="menu-selection" id="dessert">
+            </div>
+
+<div class="menu-selection" id="dessert">
         <h2>Dessert</h2>
+
         <div class="menu-item">
+
             <div class="item">
                 <h3>Chocolate Lava Cake</h3>
                 <p>Warm chocolate cake with a gooey center, served with vanilla ice cream.</p>
-                <span class="price">R65</span>
+                <p class="price">R65</p>
+            </div>
+
             <div class="item">
                 <h3>Creme Brulee</h3>
                 <p>Rich custard base topped with a layer of hardened caramelized sugar.</p>
-                <span class="price">R75</span>           
+                <p class="price">R75</p>
+             </div>
+
             <div class="item">
                 <h3>Cheesecake</h3>
                 <p>Creamy cheesecake with a graham cracker crust, served with berry compote.</p>
-                <span class="price">R70</span>
+                <p class="price">R70</p>
+             </div>
+
             <div class="item">
                 <h3>Tiramisu</h3>
                 <p>A pick me up made with espresso and masarpone cheese</p>
-                <span class="price">R75</span>
+                <p class="price">R75</p>
+            </div>
+
             <div class="item">
                 <h3>Black Forest cake</h3>
                 <p>Chocolate sponge cake with layers of whipped cream</p>
-                <span class="price">R65</span>
+                <p class="price">R65</p>
 
-    <footer>
+<footer>
         &copy; 2024 Junior's Kitchen. All rights reserved.
-    </footer>
+</footer>
